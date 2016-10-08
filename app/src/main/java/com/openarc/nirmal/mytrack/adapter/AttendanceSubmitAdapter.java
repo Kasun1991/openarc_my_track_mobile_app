@@ -90,7 +90,7 @@ public class AttendanceSubmitAdapter extends RecyclerView.Adapter<AttendanceSubm
         public void bind(Context context, final AttendanceSubmit mAttendanceSubmit, final OnItemLongClickListener longClickListener) {
             tvStatus.setText(mAttendanceSubmit.status);
             tvDate.setText(mAttendanceSubmit.date);
-            tvTimeIn.setText(mAttendanceSubmit.timeOut);
+            tvTimeIn.setText(mAttendanceSubmit.timeIn);
             tvTimeOut.setText(mAttendanceSubmit.timeOut);
             tvReason.setText(mAttendanceSubmit.remark);
 
