@@ -1,5 +1,5 @@
 # OpenArc Employee Detail Website as Mobile Application
-## openarc_my_track_mobile_app
+## Openarc My Track Mobile App
 
 ***
 ![Openarc My Track](http://www.coderfirst.lk/upload/post/images/blog/4708c5b6-0521-49b4-b127-b404316f7cebportfolio-mytrack-model-cover.jpg)
