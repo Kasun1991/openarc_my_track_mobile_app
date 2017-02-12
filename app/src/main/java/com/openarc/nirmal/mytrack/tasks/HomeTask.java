@@ -85,8 +85,8 @@ public class HomeTask extends AsyncTask<Void, Void, Void> {
         if (!(Double.parseDouble(kpi.mawh) > 9.5))
             homeView.tvMAWH.setTextColor(context.getResources().getColor(R.color.red));
 
-        if (!(Double.parseDouble(kpi.sui.replace("%", "")) > 92))
-            homeView.tvSUI.setTextColor(context.getResources().getColor(R.color.red));
+//        if (!(Double.parseDouble(kpi.sui.replace("%", "")) > 92))
+//            homeView.tvSUI.setTextColor(context.getResources().getColor(R.color.red));
 
         homeView.tvCAWH.setText(kpi.cawh);
         homeView.tvMAWH.setText(kpi.mawh);
@@ -184,13 +184,13 @@ public class HomeTask extends AsyncTask<Void, Void, Void> {
         endIndex = body.indexOf("</h4>", startIndex + 1);
         kpi.mawh = body.substring(startIndex, endIndex).trim();
         System.out.println(body.substring(startIndex, endIndex).trim());
-        startIndex = body.indexOf("SUI", startIndex + 1);
-        startIndex = body.indexOf("</span>", startIndex + 1);
-        startIndex = body.indexOf(":", startIndex + 1);
-        startIndex = startIndex + 2;
-        endIndex = body.indexOf("</h4>", startIndex + 1);
-        kpi.sui = body.substring(startIndex, endIndex).trim();
-        System.out.println(body.substring(startIndex, endIndex).trim());
+//        startIndex = body.indexOf("SUI", startIndex + 1);
+//        startIndex = body.indexOf("</span>", startIndex + 1);
+//        startIndex = body.indexOf(":", startIndex + 1);
+//        startIndex = startIndex + 2;
+//        endIndex = body.indexOf("</h4>", startIndex + 1);
+        kpi.sui = "N/A";
+//        System.out.println(body.substring(startIndex, endIndex).trim());
 
     }
 
